@@ -9,7 +9,16 @@
 		<a href="index.html">home</a> 
 		<a href="register.html">register</a>
 		<a href="about.html">about</a>
-		
+		function init() {
+          Papa.parse('https://docs.google.com/spreadsheets/d/1DTTDDqEQu6u8p9bOp9_nLKcYjxy1K5xRC9fX-B11Vow/edit#gid=0/pub?output=csv', {
+          download: true,
+          header: true,
+          complete: function(results) {
+            var data = results.data
+            console.log(data)
+          }
+        })
+window.addEventListener('DOMContentLoaded', init)
 	
 </body>
 
