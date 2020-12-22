@@ -1,13 +1,63 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>parking area</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; 
+  font-size: 28px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
-
 <body>
-		
-		<a href="sign in.html">sign in</a>
-		<a href="about.html">about</a>
-</body>
 
+<div class="sidenav">
+					<a href="index.html">HOME</a>
+                    <a href="Objectives.html">Objectives of the Study</a>
+					 <a href="database.html">Database Architecture</a>
+                    <a href="erd.html">ERD</a>
+                    <a href="sql.html">SQL</a>
+</div>
+
+<div class="main">
+  <h2>Rationale of the Study</h2>
+  <p>In this study, the researchers will develop a system that will help people to park their car in the available area. The invention provides a parking area for a car, a device will detect for a car if there is an available space. If a car is in the slotted parking area, the sensor information is translated to parking space counts. If a car is in the unslotted parking area, the sensor information is translated to a parking space map. The monitor will show the necessary information to the driver. The driver will know if there's an available space in parking area or not.
+</p>
+</div>
+   
+</body>
 </html> 
